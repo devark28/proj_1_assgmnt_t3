@@ -1,0 +1,63 @@
+1192761 20:56:18.190318 execve("./backup_tool", ["./backup_tool"], 0x7ffceacceb80 /* 55 vars */) = 0
+1192761 20:56:18.190972 brk(NULL)       = 0x582bb814a000
+1192761 20:56:18.191072 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70569db74000
+1192761 20:56:18.191142 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1192761 20:56:18.191323 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1192761 20:56:18.191394 fstat(3, {st_mode=S_IFREG|0644, st_size=87983, ...}) = 0
+1192761 20:56:18.191479 mmap(NULL, 87983, PROT_READ, MAP_PRIVATE, 3, 0) = 0x70569db5e000
+1192761 20:56:18.191533 close(3)        = 0
+1192761 20:56:18.191589 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1192761 20:56:18.191643 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+1192761 20:56:18.191699 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+1192761 20:56:18.191755 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+1192761 20:56:18.191811 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+1192761 20:56:18.191866 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x70569d800000
+1192761 20:56:18.191923 mmap(0x70569d828000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x70569d828000
+1192761 20:56:18.192044 mmap(0x70569d9b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x70569d9b0000
+1192761 20:56:18.192145 mmap(0x70569d9ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x70569d9ff000
+1192761 20:56:18.192279 mmap(0x70569da05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x70569da05000
+1192761 20:56:18.192418 close(3)        = 0
+1192761 20:56:18.192533 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70569db5b000
+1192761 20:56:18.192625 arch_prctl(ARCH_SET_FS, 0x70569db5b740) = 0
+1192761 20:56:18.192679 set_tid_address(0x70569db5ba10) = 1192761
+1192761 20:56:18.192729 set_robust_list(0x70569db5ba20, 24) = 0
+1192761 20:56:18.192779 rseq(0x70569db5c060, 0x20, 0, 0x53053053) = 0
+1192761 20:56:18.192956 mprotect(0x70569d9ff000, 16384, PROT_READ) = 0
+1192761 20:56:18.193032 mprotect(0x582b8d11a000, 4096, PROT_READ) = 0
+1192761 20:56:18.193085 mprotect(0x70569dbb4000, 8192, PROT_READ) = 0
+1192761 20:56:18.193159 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1192761 20:56:18.193236 munmap(0x70569db5e000, 87983) = 0
+1192761 20:56:18.193337 getrandom("\x68\x38\xe0\x6c\xf7\x86\x36\x2b", 8, GRND_NONBLOCK) = 8
+1192761 20:56:18.193390 brk(NULL)       = 0x582bb814a000
+1192761 20:56:18.193452 brk(0x582bb816b000) = 0x582bb816b000
+1192761 20:56:18.193539 openat(AT_FDCWD, "backup.log", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+1192761 20:56:18.193694 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 4
+1192761 20:56:18.193752 fstat(4, {st_mode=S_IFREG|0644, st_size=149, ...}) = 0
+1192761 20:56:18.193804 fstat(4, {st_mode=S_IFREG|0644, st_size=149, ...}) = 0
+1192761 20:56:18.193856 read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 149
+1192761 20:56:18.193907 lseek(4, -80, SEEK_CUR) = 69
+1192761 20:56:18.193951 read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 80
+1192761 20:56:18.194005 close(4)        = 0
+1192761 20:56:18.194080 fstat(3, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+1192761 20:56:18.194133 openat(AT_FDCWD, "backup_data.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4
+1192761 20:56:18.194211 fstat(4, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+1192761 20:56:18.194267 write(4, "record_id=1,status=ok\nrecord_id="..., 66) = 66
+1192761 20:56:18.194335 close(4)        = 0
+1192761 20:56:18.194480 newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=149, ...}, 0) = 0
+1192761 20:56:18.194560 openat(AT_FDCWD, "backup_data.txt", O_RDONLY) = 4
+1192761 20:56:18.194617 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x8), ...}) = 0
+1192761 20:56:18.194703 write(1, "Backup file contents:\n", 22) = 22
+1192761 20:56:18.194768 fstat(4, {st_mode=S_IFREG|0664, st_size=66, ...}) = 0
+1192761 20:56:18.194835 read(4, "record_id=1,status=ok\nrecord_id="..., 4096) = 66
+1192761 20:56:18.194910 write(1, "  record_id=1,status=ok\n", 24) = 24
+1192761 20:56:18.194986 write(1, "  record_id=2,status=ok\n", 24) = 24
+1192761 20:56:18.195060 write(1, "  record_id=3,status=ok\n", 24) = 24
+1192761 20:56:18.195130 read(4, "", 4096) = 0
+1192761 20:56:18.195193 close(4)        = 0
+1192761 20:56:18.195256 newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=149, ...}, 0) = 0
+1192761 20:56:18.195338 newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=149, ...}, 0) = 0
+1192761 20:56:18.195416 write(3, "[2026-07-03 20:56:18] Backup sta"..., 190) = 190
+1192761 20:56:18.195523 close(3)        = 0
+1192761 20:56:18.195660 write(1, "Backup complete. See backup_data"..., 52) = 52
+1192761 20:56:18.195748 exit_group(0)   = ?
+1192761 20:56:18.195945 +++ exited with 0 +++
